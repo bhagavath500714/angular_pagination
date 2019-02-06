@@ -1,0 +1,19 @@
+<div class="page-wrapper" style="display:flex;align-items:center;justify-content: center;flex-direction:column;height:100vh;">
+  <div class="example-container" style="display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 5px;
+  background: #f9f9f9;">
+  <form class="login-form" (keyup.enter)="login()">
+    <mat-form-field>
+      <input matInput placeholder="Username" type="text" [(ngModel)] ="person.username" name="username" >
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="password" type="password" [(ngModel)] = "person.password" name="password">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" (click)="login()">Login</button>
+  </div> 
+</div>
